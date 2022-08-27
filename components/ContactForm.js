@@ -72,7 +72,7 @@ export function ContactForm() {
 
     return <SectionTemplate className="relative">
         <div className="w-72 absolute right-0 pointer-events-none">
-            <Image src="/distort3.png" width={2058} height={2845} />
+            <Image alt="" src="/distort3.png" width={2058} height={2845} />
         </div>
         <div className="p-10 md:p-16 pt-44 md:pt-52 flex flex-col justify-end items-start h-full gap-2 w-full antialiased">
             <Step visible={step === 0} first={true} dispatch={dispatch}>
@@ -82,7 +82,7 @@ export function ContactForm() {
                     </h1>
                     <p>
                         Looked around my portfolio and like what you see? Drop me a line!<br /><br />
-                        First off, what's your name?
+                        First off, what&apos;s your name?
                     </p>
                     <input
                         type="text"
@@ -155,7 +155,7 @@ export function ContactForm() {
                         Nearly there...
                     </h1>
                     <p className="max-w-lg">
-                        Once you send off your message, I'll try and get back to you within 2-3 working days. You can always reach me at <a className="underline" href="mailto:chris@chrisyalamov.space">chris@chrisyalamov.space</a>
+                        Once you send off your message, I&apos;ll try and get back to you within 2-3 working days. You can always reach me at <a className="underline" href="mailto:chris@chrisyalamov.space">chris@chrisyalamov.space</a>
                     </p>
                 </div>
             </Step>

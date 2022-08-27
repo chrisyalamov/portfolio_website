@@ -41,8 +41,8 @@ export const LandingHeader = () => {
             <Image src="/wave.png" alt="wave" width={300} height={300} loading="eager" />
         </Wave>
         <Distort>
-            <div className="dark:hidden"><Image src="/distort.png" width={2245} height={3990} /></div>
-            <div className="hidden dark:block"><Image src="/distortDark.png" width={2245} height={3990} /></div>
+            <div className="dark:hidden"><Image alt="" src="/distort.png" width={2245} height={3990} /></div>
+            <div className="hidden dark:block"><Image alt="" src="/distortDark.png" width={2245} height={3990} /></div>
         </Distort>
     </SectionTemplate>
 }

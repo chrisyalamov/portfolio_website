@@ -75,42 +75,6 @@ let Sections = ({sections}) => {
     </>
 }
 
-// let Contact = () => {
-//     return <SectionTemplate>
-//         <div className="p-10 md:p-16 flex flex-col items-start h-full w-full gap-2 antialiased relative">
-//             <h2 className="text-2xl font-semibold mb-2 antialiased">💬 Get in touch</h2>
-//             <div className="ml-8 antialiased flex flex-col">
-//                 <p className="text-lg mb-4 max-w-md">
-//                     I&apos;m always open to new opportunities. If you have a project in mind, get in touch!
-//                 </p>
-//                 <br />
-//                 <div className="flex flex-col gap-2">
-//                     <a href="mailto:chris@chrisyalamov.space?subject=%F0%9F%91%8B%20Hey%2C%20let's%20connect!&body=Hi%20there%2C%0D%0A%0D%0AI'm%20%5Bname%5D%20(from%20%5Bcompany%5D).%20I'm%20looking%20for%20someone%20to%20work%20with%20on%20%5Bproject%5D.%0D%0A%0D%0ALet's%20chat!">
-//                         <FiMail className="inline mb-1 mr-1" /> 
-//                         <span className="underline">Reach out via email</span>
-//                     </a>
-//                     <a href="https://www.linkedin.com/in/chrisyalamov/">
-//                         <FiLinkedin className="inline mb-1 mr-1" /> 
-//                         <span className="underline">Connect with me on LinkedIn</span>
-//                     </a>
-//                     <a href="https://github.com/chrisyalamov">
-//                         <FiGithub className="inline mb-1 mr-1" /> 
-//                         <span className="underline">Check out my Github</span>
-//                     </a>
-//                     <a href="https://twitter.com/chrisyalamov">
-//                         <FiTwitter className="inline mb-1 mr-1" /> 
-//                         <span className="underline">Follow me on Twitter</span>
-//                     </a>
-//                 </div>
-//                 <div className="w-28 md:w-48 mt-10 md:mt-0 self-end">
-//                     <Image src="/think.png" width={325} height={329}/>
-//                 </div>
-//             </div>
-//         </div>
-
-//     </SectionTemplate>
-// }
-
 let StyledImageWrapper = styled.div`
     width: ${props => props.newWidthMobile}px;
 
@@ -164,7 +128,7 @@ export const ProjectFull = ({project}) => {
     return <>
         <SectionTemplate className="relative min-h-[300px]" customStyles={css`min-height:inherit!important;`}>
             <div className="absolute top-0 md:opacity-70 w-[900px] md:w-full left-1/2 -translate-x-1/2 z-0 dark:mix-blend-screen">
-                <Image src="/distort2.png" width={2058} height={654} />
+                <Image alt="" src="/distort2.png" width={2058} height={654} />
             </div>
             <div className="p-10 md:p-16 pt-44 md:pt-52 flex flex-col justify-end items-start h-full gap-2 max-w-lg antialiased">
                 <Link href="/">
