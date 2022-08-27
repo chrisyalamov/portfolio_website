@@ -4,6 +4,8 @@ import TextareaAutosize from "react-textarea-autosize";
 import { SectionTemplate } from "./SectionTemplate";
 import { BsCalendar3, BsCalendar3Range } from "react-icons/bs";
 import { TbCurrencyPound } from "react-icons/tb";
+import { FaRegUser } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 
 let Step = ({ visible, children, dispatch, first, last, submit }) => {
@@ -82,13 +84,13 @@ export function ContactForm() {
                     </h1>
                     <p>
                         Looked around my portfolio and like what you see? Drop me a line!<br /><br />
-                        First off, what&apos;s your name?
                     </p>
-                    <input
-                        type="text"
-                        placeholder="Name"
-                        className="my-4 font-base p-2 rounded-md border-[1px] border-slate-200 min-w-[20rem]"
-                        onChange={e => setFormData({ ...formData, name: e.target.value })} />
+                    <Field 
+                        label="First off, what's your name?" 
+                        placeholder="Name" 
+                        onChange={val => setFormData({...formData, name: val})} 
+                        icon={<FaRegUser className="mt-1" />} 
+                    />
                 </div>
             </Step>
             <Step visible={step === 1} dispatch={dispatch}>
@@ -97,13 +99,14 @@ export function ContactForm() {
                         Hey {formData.name}
                     </h1>
                     <p>
-                        On what email address can I get back to you?
+                        How do I get back to you?
                     </p>
-                    <input
-                        type="email"
-                        placeholder="Email"
-                        className="my-4 font-base p-2 rounded-md border-[1px] border-slate-200 min-w-[20rem]"
-                        onChange={e => setFormData({ ...formData, email: e.target.value })} />
+                    <Field 
+                        label="Enter your email address" 
+                        placeholder="Email" 
+                        onChange={val => setFormData({...formData, email: val})} 
+                        icon={<FiMail className="mt-1" />} 
+                    />
                 </div>
             </Step>
             <Step visible={step === 2} dispatch={dispatch}>
@@ -115,7 +118,7 @@ export function ContactForm() {
                         Type in your message below.
                     </p>
                     <TextareaAutosize 
-                        className="my-4 font-base p-2 rounded-md border-[1px] border-slate-200 min-w-[20rem]"
+                        className="my-4 font-base p-2 rounded-md border-[1px] border-slate-200 min-w-[20rem] dark:bg-slate-700"
                         onChange={e => setFormData({ ...formData, message: e.target.value })}
                         minRows={4} />
                 </div>
