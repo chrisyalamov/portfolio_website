@@ -67,7 +67,8 @@ let Sections = ({sections}) => {
                         h1: props => <h1 className="text-2xl font-semibold mb-2">{props.children}</h1>,
                         h2: props => <h2 className="text-xl font-semibold mb-2">{props.children}</h2>,
                         h3: props => <h3 className="text-lg font-semibold mb-2">{props.children}</h3>,
-                        img: props => <img src={props.src} alt={props.alt} className="max-h-96 inline-block my-4 mr-5 rounded-lg border-[1px] border-slate-300" />
+                        img: props => <img src={props.src} alt={props.alt} className="max-h-96 inline-block my-4 mr-5 rounded-lg border-[1px] border-slate-300" />,
+                        a: props => <a href={props.href} className="underline">{props.children}</a>
                     }} />
                 </div>
             </SectionTemplate>
