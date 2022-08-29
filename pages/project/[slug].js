@@ -14,7 +14,7 @@ const hygraph = new GraphQLClient(process.env.HYGRAPH_URL, {
 
 export default function Project(props) {
   return (
-    <div className='font-sans bg-slate-50 text-slate-900 dark:bg-slate-800 dark:text-slate-50 overflow-hidden flex flex-col items-center'>
+    <div className='font-sans bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50 overflow-hidden flex flex-col items-center'>
       <Head>
         <title>Christian Yalamov | Portfolio</title>
         <meta name="description" content="Christian Yalamov — Creative and Technical Portfolio" />

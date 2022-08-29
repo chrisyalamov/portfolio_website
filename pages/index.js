@@ -4,6 +4,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import { AboutMe } from '../components/AboutMe'
 import { Contact } from '../components/Contact'
+import { CV } from '../components/CV'
 import { Education } from '../components/Education'
 import { LandingHeader } from '../components/LandingHeader'
 import { Projects } from '../components/Projects'
@@ -29,7 +30,7 @@ let MainContainer = styled.div`
 
 export default function Home(props) {
   return (
-    <div className='font-sans bg-slate-50 text-slate-900 dark:bg-slate-800 dark:text-slate-50 overflow-hidden'>
+    <div className='font-sans bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50 overflow-hidden'>
       <Head>
         <title>Christian Yalamov | Portfolio</title>
         <meta name="description" content="Christian Yalamov — Creative and Technical Portfolio" />
@@ -44,6 +45,7 @@ export default function Home(props) {
         <AboutMe />
         <Education />
         <Contact />
+        <CV />
       </MainContainer>
     </div>
   )
