@@ -32,6 +32,7 @@ export const LandingHeader = () => {
         @media (min-width: 768px) {
             flex-direction: row;
         }
+        padding-bottom: 0!important;
         `}>
         <div className="antialiased p-10 px-16 max-w-sm">
             <h2 className="text-3xl font-medium mb-2">Hello, I&apos;m Chris.</h2>
