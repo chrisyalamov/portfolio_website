@@ -1,7 +1,11 @@
 import { SectionTemplate } from "./SectionTemplate"
 
 export const Education = () => {
-    return <SectionTemplate>
+    return <SectionTemplate customStyles={`
+    @media (max-width: 640px) {
+        padding-bottom: 5rem;
+    }
+    `}>
         <div className="p-10 md:p-24 px-16 max-w-lg">
             <div>
                 <h2 className="text-2xl font-semibold mb-2">🎓 Education</h2>

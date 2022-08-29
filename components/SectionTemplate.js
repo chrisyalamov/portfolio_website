@@ -12,7 +12,7 @@ export const SectionTemplate = styled.section`
     @media (max-width: 640px) {
         scroll-snap-align: start;
         padding-top: 5rem;
-        padding-bottom: 5rem;
+        // padding-bottom: 5rem;
         // min-height: 80vh;
     }
     ${({customStyles}) => customStyles}}

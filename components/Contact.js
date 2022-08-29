@@ -3,7 +3,11 @@ import { FiGithub, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi"
 import Link from "next/link"
 
 export const Contact = () => {
-    return <SectionTemplate>
+    return <SectionTemplate customStyles={`
+    @media (max-width: 640px) {
+        padding-bottom: 5rem;
+    }
+    `}>
         <div className="p-10 md:p-24 px-16 max-w-xl">
             <h2 className="text-2xl font-semibold mb-2 antialiased">💬 Get in touch</h2>
             <div className="ml-8 antialiased">
