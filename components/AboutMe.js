@@ -10,7 +10,7 @@ export const AboutMe = () => {
                         I&apos;m a student, designer and developer based in Manchester, UK. I&apos;m currently studying Business Technology at Manchester Metropolitan Business School.
                     </p>
                     <p className="text-sm mb-4">
-                        Originally from Bulgaria, I am currenly based between Bristol and Manchester.
+                        Originally from Bulgaria, I am currently based between Bristol and Manchester.
                     </p>
                     <p className="text-sm mb-4">
                         I have experience with developing APIs, web applications, deploying on the cloud, as well as designing brands and marketing material.
